@@ -20,7 +20,8 @@
        <div id="perPerson">0</div>
      </form>
    </div>
-      <div class="col-md-6 mx-auto">
+    
+    <div class="col-md-6 mx-auto">
         <div class="card card-body text-center mt-5">
           <h1 class="heading display-5 pb-3">Tip Calculator</h1>
           <form id="tip-form">
@@ -35,17 +36,21 @@
                 <label class="form-check-label" for="flexSwitchCheckDefault">Fair</label>
               </div>
               <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                <label class="form-check-label" for="flexSwitchCheckChecked">Good</label>
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheck" >
+                <label class="form-check-label" for="flexSwitchCheck">Good</label>
               </div>
               <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
-                <label class="form-check-label" for="flexSwitchCheckDisabled">Awesome</label>
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheck">
+                <label class="form-check-label" for="flexSwitchCheck">Awesome</label>
               </div>
               <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
-                <label class="form-check-label" for="flexSwitchCheckDisabled">Outstanding</label>
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheck">
+                <label class="form-check-label" for="flexSwitchCheck">Outstanding</label>
               </div>
+
+              <p>How many people are sharing the bill?</p>
+              <input id="peopleamt" type="text" placeholder="Number of People"> people
+              <button type="button" id="calculate">Calculate!</button>
               
             <div class="form-group tipPersent">
               <div class="input-group">
@@ -56,6 +61,8 @@
                 <span class="input-group-addon" id="tipOutput"></span>
               </div>
             </div>
+
+            <input type="submit">
 
         </form>
         <hr>
